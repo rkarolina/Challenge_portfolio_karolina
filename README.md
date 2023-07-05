@@ -61,6 +61,7 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 //*[@id="__next"]/form/div/div[2]/div//*[@id="__next"]/form/div/div[2]/div
 
 <h4>SIGN IN button
+    
 1. id <br/>
 //*[@id="__next"]/form/div/div[2]/button/span[1]
 2. Class <br/>
