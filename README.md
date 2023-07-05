@@ -20,54 +20,55 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 
 
 ### <h2> *Zadanie 2: selektory*
-#login
-<h6> Scouts Panel
-1. selektor z atrybutem id 
+
+<h4>Scouts Panel
+
+1. selektor z atrybutem id <br/>
 //*[@id="__next"]/form/div/div[1]/h5  
-2. selector z class
+2. selector z class <br/>
 //*[@class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"] 
-3. selector z div
+3. selector z div <br/>
 //div/form/div/div/*//*[@id="__next"]/div[1]/main/div[2]/form/div[3]/button[1]/span[1]
 
-<h6>Login
-1. selector z id
+<h4>Login
+1. selector z id <br/>
 //*[@id="login"]
-2. selector z class
+2. selector z class <br/>
 //*[contains(@class, "MuiInputBase-input MuiInput-input")] 
-3. selector z input
+3. selector z input <br/>
 //input[@type="text"] 
 
-<h6> Password
+<h4> Password
 
-1. selector z id
+1. selector z id <br/>
 //*[@id="password"]
-2. selector z input#password
+2. selector z input#password <br/>
 //input[@type="password"] 
-3. selector z class
+3. selector z class <br/>
 //*[starts-with(@class="MuiInputBase-input MuiInput-input")] 
 
-<h6> Remind Password
+<h4> Remind Password
 
-1. selector z id
+1. selector z id <br/>
 //*[@id="__next"]/form/div/div[1]/a
-2. selector z class
+2. selector z class <br/>
 //*[@class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary"]
-3. Last
+3. Last <br/>
 //*[last()][name()="a"]
 
-<h6> English
+<h4> English
 
-1. selector z id
+1. selector z id <br/>
 //*[@id="__next"]/form/div/div[2]/div//*[@id="__next"]/form/div/div[2]/div
 
-<h6>SIGN IN button
-1. id
+<h4>SIGN IN button
+1. id <br/>
 //*[@id="__next"]/form/div/div[2]/button/span[1]
-2. Class
+2. Class <br/>
 //*[@class="MuiButton-label"]
 
 
-<h6> Form
+<h4> Form
 
-1. id
+1. id <br/>
     //*[@id="__next"]/form
