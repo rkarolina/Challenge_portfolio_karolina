@@ -5,8 +5,8 @@ __Cześć, mam na imię Karolina. Poniżej przedstawiam główne powody dołącz
 a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z list i punktów:__ 
 1. Chcę nauczyć się korzystać ze środowisk i narzędzi używanych do testów automatycznych.
 2. W przyszłości chciałabym zostać testerem automatyzującym.
-3. ~~Bo~~ Lubię wyzwania (motywują do pracy) 🙂
-4. Mam nadzieję, że uda mi się stworzyć świetne portfolio na moim profilu [GitHub](https://github.com/rkarolina)
+3. Lubię wyzwania (motywują do pracy) 🙂
+4. Mam nadzieję, że ~~uda mi się~~ stworzę świetne portfolio na moim profilu [GitHub](https://github.com/rkarolina)
 
 <h3>Aby zbliżyć się do celu będę systematycznie wykonywać nowe zadania.
 <h4>W pierwszym tygodniu wyzwania:
@@ -19,54 +19,69 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 
 
 ### <h2> *Zadanie 2: selektory*
-#login
+
 <h6> Scouts Panel
+
 1. selektor z atrybutem id 
 //*[@id="__next"]/form/div/div[1]/h5  
 2. selector z class
-//*[@class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"] 
-3. selector z div
-//div/form/div/div/*//*[@id="__next"]/div[1]/main/div[2]/form/div[3]/button[1]/span[1]
+//*[contains(@class, "gutterBottom")]
+3. Selector z text
+//*[text()="Scouts Panel"]
 
-<h6>Login
+<h6>Login Input 
 1. selector z id
 //*[@id="login"]
-2. selector z class
-//*[contains(@class, "MuiInputBase-input MuiInput-input")] 
+2. selector z class oraz id
+//*[@class="MuiInputBase-input MuiInput-input"][@id="login"] 
 3. selector z input
-//input[@type="text"] 
+//input[@type="text"]
+input[id="login"]
 
-<h6> Password
+<h6> Password Input
 
 1. selector z id
 //*[@id="password"]
-2. selector z input#password
+2. selector z input password
 //input[@type="password"] 
-3. selector z class
-//*[starts-with(@class="MuiInputBase-input MuiInput-input")] 
+input[id="password"]
+3. selector z class oraz id
+//*[@class="MuiInputBase-input MuiInput-input"][@id="password"] 
 
 <h6> Remind Password
 
 1. selector z id
 //*[@id="__next"]/form/div/div[1]/a
+
 2. selector z class
-//*[@class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary"]
+//*[contains(@class, "colorPrimary")]
 3. Last
 //*[last()][name()="a"]
 
 <h6> English
 
 1. selector z id
-//*[@id="__next"]/form/div/div[2]/div//*[@id="__next"]/form/div/div[2]/div
+//*[@id="__next"]/form/div/div[2]/div
+2. Selector z text
+//*[text()="English"]
+3. selector z class
+//*[starts-with(@class, "MuiSelect-root MuiSelect-select")]
 
-<h6>SIGN IN button
-1. id
+<h6> Zmiana języka (dropdown)
+
+1. selector z class
+//*[@class= "MuiSelect-nativeInput"]
+2. selector z id
+//*[@id="__next"]/form/div/div[2]/div/input
+3. selector z input
+input[class= "MuiSelect-nativeInput"]
+input[value= "pl"]
+
+<h6>SIGN IN/Zaloguj button
+1. selector z id
 //*[@id="__next"]/form/div/div[2]/button/span[1]
-2. Class
+2. selector z class
 //*[@class="MuiButton-label"]
+3. Selector z button
+//button
 
-
-<h6> Form
-
-1. id
-    //*[@id="__next"]/form
