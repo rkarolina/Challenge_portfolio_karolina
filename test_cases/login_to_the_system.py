@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 from pages.add_a_player import AddPlayer
+from pages.base_page import BasePage
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
@@ -36,6 +37,10 @@ class TestLoginPage(unittest.TestCase):
         dashboard_page.title_of_page()
         add_a_player_page = AddPlayer(self.driver)
         add_a_player_page.title_of_page()
+        # base_page = BasePage(self.driver) subtask 5
+        # base_page.get_page_title(self) subtask 5
+
+
         time.sleep(5)
     @classmethod
     def tearDown(self):
