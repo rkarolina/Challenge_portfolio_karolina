@@ -12,113 +12,76 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 
 <h3>Aby zbliżyć się do celu będę systematycznie wykonywać nowe zadania.
 <h4>W pierwszym tygodniu wyzwania:
-#####
+
 - [x] Pobrałam niezbędne narzędzia.
 - [x] Sklonowałam repozytorium.
 - [x] Edytowałam swój pierwszy plik README w języku markdown!
-- [x] Ukończyłam Subtask 1 commitując (dziwnie pisze się po polsku używając zapożyczeń z innych języków) plik do zdalnego repozytorium.
+- [ ] Ukończyłam Subtask 1 commitując (dziwnie pisze się po polsku używając zapożyczeń z innych języków) plik do zdalnego repozytorium.
 
 ### <h2> _Zadanie 2: selektory_
 
-<h4>Scouts Panel
-#####
+<h4> Scouts Panel
+
 1. selektor z atrybutem id <br/>
-```
    //*[@id="__next"]/form/div/div[1]/h5
-```
 2. selector z class<br/>
-```
    //*[contains(@class, "gutterBottom")]
-```
 3. Selector z text<br/>
-```
    //*[text()="Scouts Panel"]
-```
+
 <h4>Login Input 
-#####
+
 1. selector z id<br/>
-```
 //*[@id="login"]
-```
 2. selector z class oraz id<br/>
-```
-//*[@class="MuiInputBase-input MuiInput-input"][@id="login"]
-```
+//*[@class="MuiInputBase-input MuiInput-input"][@id="login"] 
 3. selector z input<br/>
-```
 //input[@type="text"]<br/>
 input[id="login"]
-```
-<h4>Password Input
-#####
+
+<h4> Password Input
+
 1. selector z id <br/>
-```
    //*[@id="password"]
-```
 2. selector z input password<br/>
-```
    //input[@type="password"]
    input[id="password"]
-```
 3. selector z class oraz id<br/>
-```
    //*[@class="MuiInputBase-input MuiInput-input"][@id="password"]
-```
-<h4>Remind Password
-#####
+
+<h4> Remind Password
+
 1. selector z id <br/>
-```
    //*[@id="__next"]/form/div/div[1]/a
-```
 2. selector z class<br/>
-```
    //*[contains(@class, "colorPrimary")]
-```
 3. Last<br/>
-```
    //*[last()][name()="a"]
-```
-<h4>English
-#####
+
+<h4> English
+
 1. selector z id<br/>
-```
    //*[@id="__next"]/form/div/div[2]/div
-```
 2. Selector z text<br/>
-```
    //*[text()="English"]
-```
 3. selector z class<br/>
-```  
-//*[starts-with(@class, "MuiSelect-root MuiSelect-select")]
-```
-<h4>Zmiana języka (dropdown)
-#####
+   //*[starts-with(@class, "MuiSelect-root MuiSelect-select")]
+
+<h4> Zmiana języka (dropdown)
+
 1. selector z class<br/>
-```
    //*[@class= "MuiSelect-nativeInput"]
-```
 2. selector z id<br/>
-```
    //*[@id="__next"]/form/div/div[2]/div/input
-```
 3. selector z input<br/>
-```
    input[class= "MuiSelect-nativeInput"]<br/>
    input[value= "pl"]
-```
-<h4>SIGN IN/Zaloguj button
-#####
-1. selector z id<br/>
-```
-//*[@id="__next"]/form/div/div[2]/button/span[1]
-```
-2. selector z class<br/>
-```
-//*[@class="MuiButton-label"]
-```
-3. Selector z button<br/>
-```
-//button
-```
 
+<h4>SIGN IN/Zaloguj button
+
+1. selector z id<br/>
+//*[@id="__next"]/form/div/div[2]/button/span[1]
+2. selector z class<br/>
+//*[@class="MuiButton-label"]
+3. Selector z button<br/>
+//button
