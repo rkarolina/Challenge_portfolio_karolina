@@ -15,7 +15,7 @@ class LoginPage(BasePage):
     def click_sign_in_button(self):
         self.click_on_the_element(self.sign_in_button_xpath)
 
-    # def title_of_page(self):
-    #     assert
+    def title_of_page(self):
+        assert self.get_page_title(self.login_url) == self.expected_title
 
 # breakpoint()
