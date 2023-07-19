@@ -85,3 +85,6 @@ input[id="login"]
 //*[@class="MuiButton-label"]
 3. Selector z button<br/>
 //button
+
+### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe
+Link do Google Drive: [Here]([https://github.com/rkarolina](https://docs.google.com/spreadsheets/d/1QJ3emVPj3xPdB_gjxR147PRwva7v2T5y/edit?usp=drive_link&ouid=102493506019105647497&rtpof=true&sd=true)https://docs.google.com/spreadsheets/d/1QJ3emVPj3xPdB_gjxR147PRwva7v2T5y/edit?usp=drive_link&ouid=102493506019105647497&rtpof=true&sd=true)
