@@ -87,5 +87,5 @@ input[id="login"]
 //button
 
 ### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe
-Link do Google Drive: [Here](https://docs.google.com/spreadsheets/d/1QJ3emVPj3xPdB_gjxR147PRwva7v2T5y/edit?usp=drive_link&ouid=102493506019105647497&rtpof=true&sd=true)
+Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
 
