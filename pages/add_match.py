@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class Dashboard(BasePage):
+class AddMatch(BasePage):
     my_team_field_xpatch = "//input[@name='myTeam']"
     enemy_team_field_xpatch = "//input[@name='enemyTeam']"
     my_team_score_field_xpatch = "//input[@name='myTeamScore']"
@@ -18,4 +18,4 @@ class Dashboard(BasePage):
     rating_field_xpatch = "//input[@name='rating']"
     submit_button_xpatch= "//*[contains(@class, 'containedPrimary')]"
     clear_button_xpatch = "//*[contains(@class, 'containedSecondary')]"
-pass
+

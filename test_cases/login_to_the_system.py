@@ -11,9 +11,8 @@ from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
-
+# TC001 - test case TC001 - login to the Scouts Panel
 class TestLoginPage(unittest.TestCase):
-
     driver = None
 
     @classmethod
@@ -32,17 +31,9 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_sign_in_button()
-
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
-        add_a_player_page = AddPlayer(self.driver)
-        add_a_player_page.title_of_page()
-        # base_page = BasePage(self.driver) subtask 5
-        # base_page.get_page_title(self) subtask 5
 
-
-        time.sleep(5)
     @classmethod
     def tearDown(self):
         self.driver.quit()
-
