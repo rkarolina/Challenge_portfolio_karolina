@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.service import Service
 
 from pages.add_a_player import AddPlayer
 from pages.dashboard import Dashboard
+from pages.edit_players import EditPlayer
 from pages.login_page import LoginPage
 from utils.settings import IMPLICITLY_WAIT, DRIVER_PATH
 
@@ -37,13 +38,30 @@ class TestAddPlayer(unittest.TestCase):
         dashboard_page.click_add_player_button()  # click on the button aa player
         add_a_player_page = AddPlayer(self.driver)  # go to add player page
         add_a_player_page.title_of_page()
-        add_a_player_page.type_in_playeremail('maciejmaciejtest@gmail.com')
-        add_a_player_page.type_in_name('Maciej')
-        add_a_player_page.type_in_surname('Maciejtest')
+        add_a_player_page.type_in_playeremail('maciejmaciejtest4@gmail.com')
+        add_a_player_page.type_in_name('Maciej4')
+        add_a_player_page.type_in_surname('Maciejtest4')
+        add_a_player_page.type_in_phone('500111236')
+        add_a_player_page.type_in_weight('70')
+        add_a_player_page.type_in_height('169')
         add_a_player_page.type_in_age('01.01.1995')
+        # add_a_player_page.click_leg_dropdown()
+        add_a_player_page.type_in_club('AC Milan')
+        add_a_player_page.type_in_level('łatwy')
         add_a_player_page.type_in_mainPosition('bramkarz')
+        add_a_player_page.type_in_secondposition('obrońca')
+        add_a_player_page.type_in_achievements('mistrz Polski')
+        # Part of TC005
+        add_a_player_page.type_in_laczyNasPilka('maciejmaciejtest')
+        add_a_player_page.type_in_ninetyMinutes('maciejmaciejtest2')
+        add_a_player_page.type_in_facebookField('brak')
+        add_a_player_page.click_addLinkToYoutube_button()
+        add_a_player_page.type_in_youtubeField('youtube/maciejmaciejtest')
         add_a_player_page.click_submit_button()
-        time.sleep(5)
+        # TODO compare last added player on dashboard page with my last added player
+        edit_page = EditPlayer(self.driver)  # go to edit player page
+        # edit_page.title_of_page()
+        time.sleep(8)
 
     @classmethod
     def tearDown(self):
