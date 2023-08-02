@@ -86,6 +86,12 @@ input[id="login"]
 3. Selector z button<br/>
 //button
 
-### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe
+### <h2> Zadanie 4: Refactor, debugger i przypadki testowe
 Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
 
+### <h2> ﻿Zadanie 6: ﻿
+Subtask 2: Zgłaszanie błędów
+Link do Google Drive: [Here](https://drive.google.com/drive/folders/1RSEK60i_cfWxJxVkaQcRkpO-BhqzUcYi?usp=drive_link)
+
+﻿Subtask 3: Raport z testów
+Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Q_FLVSkBQQV0HUVxH-FWU8VjpoOrpBng?usp=drive_link)
