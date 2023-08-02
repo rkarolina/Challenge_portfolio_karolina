@@ -21,7 +21,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver = webdriver.Chrome(service=Service(DRIVER_PATH))
         # self.driver_service = Service(executable_path=ChromeDriverManager().install())
         # self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts.futbolkolektyw.pl/en')
+        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
