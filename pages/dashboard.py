@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 
 class Dashboard(BasePage):
     expected_title = "Scouts panel"
-    dashboard_url = ('https://scouts-test.futbolkolektyw.pl')
+    dashboard_url = ('https://scouts.futbolkolektyw.pl/en/')
     MainPage_button_xpath = "//*[text()='Main page']"
     players_button_xpath = "//ul[1]/div[2]/div[2]/span"
     polski_button_xpath = "//*[text()='Polski']"

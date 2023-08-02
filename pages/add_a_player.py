@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 
 class AddPlayer(BasePage):
     add_player_button_xpath = "//a[contains(@href, '/en/players/add')]"
-    addPlayer_url = "https://scouts-test.futbolkolektyw.pl/players/add"
+    addPlayer_url = "https://scouts.futbolkolektyw.pl/players/add"
     expected_title = "Add player"
     # selectors
     email_xpath = "//input[@name='email']"

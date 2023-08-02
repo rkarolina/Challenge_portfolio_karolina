@@ -2,7 +2,7 @@ from pages.base_page import BasePage
 
 
 class Players(BasePage):
-    Players_url = ('https://scouts-test.futbolkolektyw.pl/en/players')
+    Players_url = ('https://scouts.futbolkolektyw.pl/en/players')
     # expected_title = "Players (4063) page 1" - number of players is changing...
     download_csv_button_xpath = "//*[@data-testid='Download CSV-iconButton']"
 

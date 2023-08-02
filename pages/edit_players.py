@@ -4,7 +4,7 @@ from pages.base_page import BasePage
 
 
 class EditPlayer(BasePage):
-    addPlayer_url = "https://scouts-test.futbolkolektyw.pl/en/players"
+    addPlayer_url = "https://scouts.futbolkolektyw.pl/en/players"
     players_xpath = "//ul[1]/div[2]/div[2]/span"
     search_xpath = "//div/div[1]/div[2]/input"
     firstPlayer_xpath = "//*[@id='MUIDataTableBodyRow-0']"
