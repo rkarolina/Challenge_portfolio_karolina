@@ -18,7 +18,7 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 - [x] Edytowałam swój pierwszy plik README w języku markdown!
 - [ ] Ukończyłam Subtask 1 commitując (dziwnie pisze się po polsku używając zapożyczeń z innych języków) plik do zdalnego repozytorium.
 
-### <h2> _Zadanie 2: selektory_
+### <h2> Zadanie 2: selektory
 
 <h4> Scouts Panel
 
