@@ -18,7 +18,7 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 - [x] Edytowałam swój pierwszy plik README w języku markdown!
 - [ ] Ukończyłam Subtask 1 commitując (dziwnie pisze się po polsku używając zapożyczeń z innych języków) plik do zdalnego repozytorium.
 
-### <h2> _Zadanie 2: selektory_
+### <h2> Zadanie 2: selektory
 
 <h4> Scouts Panel
 
@@ -86,6 +86,12 @@ input[id="login"]
 3. Selector z button<br/>
 //button
 
-### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe
+### <h2> Zadanie 4: Refactor, debugger i przypadki testowe
 Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
 
+### <h2> ﻿Zadanie 6: ﻿
+Subtask 2: Zgłaszanie błędów
+Link do Google Drive: [Here](https://drive.google.com/drive/folders/1RSEK60i_cfWxJxVkaQcRkpO-BhqzUcYi?usp=drive_link)
+
+﻿Subtask 3: Raport z testów
+Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Q_FLVSkBQQV0HUVxH-FWU8VjpoOrpBng?usp=drive_link)
