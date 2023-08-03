@@ -1,6 +1,6 @@
-## <h1> _Podzadanie 1: konfiguracja oprogramowania._
+## <h1> _Zadanie 1: konfiguracja oprogramowania._
 
-### <h2> _Podzadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?_
+### <h2> _Zadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?_
 
 **Cześć, mam na imię Karolina. Poniżej przedstawiam główne powody dołączenia do wyzwania,
 a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z list i punktów:**
@@ -16,11 +16,10 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 - [x] Pobrałam niezbędne narzędzia.
 - [x] Sklonowałam repozytorium.
 - [x] Edytowałam swój pierwszy plik README w języku markdown!
-- [ ] Ukończyłam Subtask 1 commitując (dziwnie pisze się po polsku używając zapożyczeń z innych języków) plik do zdalnego repozytorium.
+- [x] Ukończyłam Subtask 1 commitując plik do zdalnego repozytorium.
+### <h2> _Zadanie 2: selektory_
 
-### <h2> Zadanie 2: selektory
-
-<h4> Scouts Panel
+Scouts Panel
 
 1. selektor z atrybutem id <br/>
    //*[@id="__next"]/form/div/div[1]/h5
@@ -29,7 +28,7 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 3. Selector z text<br/>
    //*[text()="Scouts Panel"]
 
-<h4>Login Input 
+Login Input 
 
 1. selector z id<br/>
 //*[@id="login"]
@@ -39,7 +38,7 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 //input[@type="text"]<br/>
 input[id="login"]
 
-<h4> Password Input
+Password Input
 
 1. selector z id <br/>
    //*[@id="password"]
@@ -49,7 +48,7 @@ input[id="login"]
 3. selector z class oraz id<br/>
    //*[@class="MuiInputBase-input MuiInput-input"][@id="password"]
 
-<h4> Remind Password
+Remind Password
 
 1. selector z id <br/>
    //*[@id="__next"]/form/div/div[1]/a
@@ -58,7 +57,7 @@ input[id="login"]
 3. Last<br/>
    //*[last()][name()="a"]
 
-<h4> English
+English
 
 1. selector z id<br/>
    //*[@id="__next"]/form/div/div[2]/div
@@ -67,7 +66,7 @@ input[id="login"]
 3. selector z class<br/>
    //*[starts-with(@class, "MuiSelect-root MuiSelect-select")]
 
-<h4> Zmiana języka (dropdown)
+Zmiana języka (dropdown)
 
 1. selector z class<br/>
    //*[@class= "MuiSelect-nativeInput"]
@@ -77,7 +76,7 @@ input[id="login"]
    input[class= "MuiSelect-nativeInput"]<br/>
    input[value= "pl"]
 
-<h4>SIGN IN/Zaloguj button
+SIGN IN/Zaloguj button
 
 1. selector z id<br/>
 //*[@id="__next"]/form/div/div[2]/button/span[1]
@@ -86,12 +85,18 @@ input[id="login"]
 3. Selector z button<br/>
 //button
 
-### <h2> Zadanie 4: Refactor, debugger i przypadki testowe
-Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
+### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe_
+[Google Drive link](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
 
-### <h2> ﻿Zadanie 6: ﻿
-Subtask 2: Zgłaszanie błędów
-Link do Google Drive: [Here](https://drive.google.com/drive/folders/1RSEK60i_cfWxJxVkaQcRkpO-BhqzUcYi?usp=drive_link)
+### <h2> _Zadanie 5:_
+[Robot Framework Scout Panel](https://github.com/rkarolina/robotframework_scoutpanel)
 
-﻿Subtask 3: Raport z testów
-Link do Google Drive: [Here](https://drive.google.com/drive/folders/1Q_FLVSkBQQV0HUVxH-FWU8VjpoOrpBng?usp=drive_link)
+### <h2> _﻿Zadanie 6:_ ﻿
+_Subtask 2: Zgłaszanie błędów_
+[Google Drive link](https://drive.google.com/drive/folders/1RSEK60i_cfWxJxVkaQcRkpO-BhqzUcYi?usp=drive_link)
+
+_Subtask 3: Raport z testów_
+[Google Drive link](https://drive.google.com/drive/folders/1Q_FLVSkBQQV0HUVxH-FWU8VjpoOrpBng?usp=drive_link)
+
+_﻿Subtask 4: Stwórz portfolio_
+[GitHub link](https://github.com/rkarolina)
