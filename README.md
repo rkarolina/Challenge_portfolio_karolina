@@ -1,6 +1,6 @@
 # Scouts Panel
 [ENG version here](https://github.com/rkarolina/robotframework_scoutpanel/tree/main) <p>
-Aplikacja zbierająca informacje o zaowdnikach przez skautów piłkarskich (informacje kontaktowe, klub, główna i alternatywna pozycja, osiągnięcia) <p>
+Aplikacja umożliwiająca zbieranie informacji o zawodnikach przez skautów piłkarskich (informacje kontaktowe, klub, główna i alternatywna pozycja, osiągnięcia) <p>
 Funkcje:
 - tworzenie profilów zawodników
 - dodawanie meczów i wyników
