@@ -1,3 +1,22 @@
+# Scouts Panel
+[ENG version here](https://github.com/rkarolina/robotframework_scoutpanel/tree/main) <p>
+Aplikacja zbierająca informacje o zaowdnikach przez skautów piłkarskich (informacje kontaktowe, klub, główna i alternatywna pozycja, osiągnięcia) <p>
+Funkcje:
+- tworzenie profilów zawodników
+- dodawanie meczów i wyników
+- raporty
+
+# O projekcie
+[ENG version here](https://github.com/rkarolina/robotframework_scoutpanel/tree/main) <p>
+Projekt wykonywany w związku Dare IT Challenge na ścieżce QA: Wstęp do Testów Automatycznych. 💪 <p>
+Na początku na podstawie moich poprzednich doświadczeń wykonałam testy eksploracyjne w celu zapoznania się z aplikacją. <p>
+Następnie utworzyłam plan testów oraz scenariusze/przypadki testowe. <p>
+Na koniec zostały one zaimplementowane w automatyzacji testów.
+
+# Tools
+<img alt="Pycharm" src="https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white"/> <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/> 
+# Technologies
+<img alt="Python" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/> <img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white"/>
 ## <h1> _Zadanie 1: konfiguracja oprogramowania._
 
 ### <h2> _Zadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?_
