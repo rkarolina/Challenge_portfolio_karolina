@@ -13,9 +13,9 @@ Na początku na podstawie moich poprzednich doświadczeń wykonałam testy ekspl
 Następnie utworzyłam plan testów oraz scenariusze/przypadki testowe. <p>
 Na koniec zostały one zaimplementowane w automatyzacji testów.
 
-# Tools
+# Narzędzia
 <img alt="Pycharm" src="https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white"/> <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/> 
-# Technologies
+# Technologie
 <img alt="Python" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/> <img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white"/>
 ## <h1> _Zadanie 1: konfiguracja oprogramowania._
 
