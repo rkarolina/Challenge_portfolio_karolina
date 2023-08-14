@@ -8,7 +8,7 @@ Funkcje:
 
 # O projekcie
 [ENG version here](https://github.com/rkarolina/robotframework_scoutpanel/tree/main) <p>
-Projekt wykonywany w związku Dare IT Challenge na ścieżce QA: Wstęp do Testów Automatycznych. 💪 <p>
+Projekt wykonywany w ramach Dare IT Challenge na ścieżce QA: Wstęp do Testów Automatycznych. 💪 <p>
 Na początku na podstawie moich poprzednich doświadczeń wykonałam testy eksploracyjne w celu zapoznania się z aplikacją. <p>
 Następnie utworzyłam plan testów oraz scenariusze/przypadki testowe. <p>
 Na koniec zostały one zaimplementowane w automatyzacji testów.
