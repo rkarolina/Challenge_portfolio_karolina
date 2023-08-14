@@ -41,68 +41,110 @@ a ponieważ lubię konkretne odpowiedzi wszystko poniżej będzie złożone z li
 Scouts Panel
 
 1. selektor z atrybutem id <br/>
+```
    //*[@id="__next"]/form/div/div[1]/h5
+```
 2. selector z class<br/>
+```
    //*[contains(@class, "gutterBottom")]
+```
 3. Selector z text<br/>
+```
    //*[text()="Scouts Panel"]
+```
 
 Login Input 
 
 1. selector z id<br/>
+```
 //*[@id="login"]
+```
 2. selector z class oraz id<br/>
-//*[@class="MuiInputBase-input MuiInput-input"][@id="login"] 
+```
+//*[@class="MuiInputBase-input MuiInput-input"][@id="login"]
+```
 3. selector z input<br/>
+```
 //input[@type="text"]<br/>
 input[id="login"]
+```
 
 Password Input
 
 1. selector z id <br/>
+```
    //*[@id="password"]
+```
 2. selector z input password<br/>
+```
    //input[@type="password"]
    input[id="password"]
+```
 3. selector z class oraz id<br/>
+```
    //*[@class="MuiInputBase-input MuiInput-input"][@id="password"]
+```
 
 Remind Password
 
 1. selector z id <br/>
+```
    //*[@id="__next"]/form/div/div[1]/a
+```
 2. selector z class<br/>
+```
    //*[contains(@class, "colorPrimary")]
+```
 3. Last<br/>
+```
    //*[last()][name()="a"]
+```
 
 English
 
 1. selector z id<br/>
+
+```
    //*[@id="__next"]/form/div/div[2]/div
+```
 2. Selector z text<br/>
+```
    //*[text()="English"]
+```
 3. selector z class<br/>
+```
    //*[starts-with(@class, "MuiSelect-root MuiSelect-select")]
+```
 
 Zmiana języka (dropdown)
 
 1. selector z class<br/>
+```
    //*[@class= "MuiSelect-nativeInput"]
+```
 2. selector z id<br/>
+```
    //*[@id="__next"]/form/div/div[2]/div/input
+```
 3. selector z input<br/>
+```
    input[class= "MuiSelect-nativeInput"]<br/>
    input[value= "pl"]
-
+```
 SIGN IN/Zaloguj button
 
 1. selector z id<br/>
+```
 //*[@id="__next"]/form/div/div[2]/button/span[1]
+```
 2. selector z class<br/>
+```
 //*[@class="MuiButton-label"]
+```
 3. Selector z button<br/>
+```
 //button
+```
 
 ### <h2> _Zadanie 4: Refactor, debugger i przypadki testowe_
 [Google Drive link](https://drive.google.com/drive/folders/1Ran9GG_hgc1ndgp329C0nR6x7XVIvla5?usp=drive_link)
