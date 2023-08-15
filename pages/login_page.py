@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 
@@ -5,7 +7,7 @@ class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[text()='Sign in']"
-    login_url = ('https://scouts.futbolkolektyw.pl/en/')
+    login_url = ('https://scouts-test.futbolkolektyw.pl/en')
     expected_title = "Scouts panel - sign in"
 
     def type_in_email(self, email):

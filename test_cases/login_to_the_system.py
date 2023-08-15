@@ -1,20 +1,17 @@
 import os
-import time
 import unittest
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-from pages.add_a_player import AddPlayer
-from pages.base_page import BasePage
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 # TC001 - test case TC001 - login to the Scouts Panel
 class TestLoginPage(unittest.TestCase):
+    driver_service = None
     driver = None
-
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)

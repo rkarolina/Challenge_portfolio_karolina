@@ -1,9 +1,10 @@
+import time
 
 from pages.base_page import BasePage
 
 class AddPlayer(BasePage):
     add_player_button_xpath = "//a[contains(@href, '/en/players/add')]"
-    addPlayer_url = "https://scouts.futbolkolektyw.pl/players/add"
+    addPlayer_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
     # selectors
     email_xpath = "//input[@name='email']"
@@ -13,13 +14,34 @@ class AddPlayer(BasePage):
     weight_xpath = "//input[@name='weight']"
     height_xpath = "//input[@name='height']"
     age_xpath = "//input[@name='age']"
-    # TODO.. leg XPATH
     leg_xpath = "//*[@id='mui-component-select-leg']"
+    leg_menu_xpath = "//*[@class='MuiList-root MuiMenu-list MuiList-padding']"
+    # right leg option in dropdown menu
+    right_leg_xpath = "//*[contains(@data-value, 'right')]"
+    # left leg option in dropdown menu
+    left_leg_xpath = "//*[contains(@data-value, 'left')]"
     club_xpath = "//input[@name='club']"
     level_xpath = "//input[@name='level']"
     mainPosition_xpath = "//input[@name='mainPosition']"
     secondPosition_xpath = "//input[@name='secondPosition']"
     district_xpath = "//*[@id='mui-component-select-district']"
+    # district options
+    dolnoslaskie_district_xpath = "//*[starts-with(@data-value, 'dolnoslaskie')]"
+    kujawskoPomorskie_district_xpath = "//*[starts-with(@data-value, 'kujawsko-pomorskie')]"
+    lubelski_district_xpath = "//*[starts-with(@data-value, 'lubelskie')]"
+    lubuski_district_xpath = "//*[starts-with(@data-value, 'lubuskie')]"
+    lodzkie_district_xpath = "//*[starts-with(@data-value, 'lodzkie')]"
+    malopolskie_district_xpath = "//li[text()='Lesser Poland' and @data-value='malopolskie']"
+    mazowieckie_district_xpath = "//*[starts-with(@data-value, 'mazowieckie')]"
+    opolskie_district_xpath = "//*[starts-with(@data-value, 'opolskie')]"
+    podkarpackie_district_xpath = "//*[starts-with(@data-value, 'podkarpackie')]"
+    podlaskie_district_xpath = "//*[starts-with(@data-value, 'podlaskie')]"
+    pomorskie_district_xpath = "//li[text()='Pomerania' or @data-value='pomorskie']"
+    slaskie_district_xpath = "//*[starts-with(@data-value, 'slaskie')]"
+    swietokrzyskie_district_xpath = "//*[starts-with(@data-value, 'swietokrzyskie')]"
+    warminskoMazurskie_district_xpath = "//*[starts-with(@data-value, 'warminsko-mazurskie')]"
+    wielkopolskie_district_xpath = "//*[starts-with(@data-value, 'wielkopolskie')]"
+    zachodniopomorskie_district_xpath = "//*[starts-with(@data-value, 'zachodniopomorskie')]"
     achievements_xpath = "//input[@name='achievements']"
     addLanguage_xpath = "//div[15]/button/span[1]"
     languagesToProvide_xpath = "//div[15]/div/div/div/input"
@@ -114,11 +136,52 @@ class AddPlayer(BasePage):
     def click_add_player_button(self):
         self.wait_for_element_to_be_clickable(self.add_player_button_xpath)
         self.click_on_the_element(self.add_player_button_xpath)
-    def click_leg_dropdown(self):
+    def select_leg_dropdown(self, leg):
         # leg = Select(driver.find_element_by_id('mui-component-select-leg)')
         self.wait_for_element_to_be_clickable(self.leg_xpath)
         self.click_on_the_element(self.leg_xpath)
+        if leg == "Left leg":
+            self.wait_for_element_to_be_clickable(self.left_leg_xpath)
+            self.click_on_the_element(self.left_leg_xpath)
+        else:
+            self.wait_for_element_to_be_clickable(self.right_leg_xpath)
+            self.click_on_the_element(self.right_leg_xpath)
 
+    def select_district_dropdown(self, district):
+        self.wait_for_element_to_be_clickable(self.district_xpath)
+        self.click_on_the_element(self.district_xpath)
+        if district == "Lower Silesia":
+            self.click_on_the_element(self.dolnoslaskie_district_xpath)
+        elif district == "Kuyavia-Pomerania":
+            self.click_on_the_element(self.kujawskoPomorskie_district_xpath)
+        elif district == "Lublin":
+            self.click_on_the_element(self.lubelski_district_xpath)
+        elif district == "Lubusz":
+            self.click_on_the_element(self.lubuski_district_xpath)
+        elif district == "Łódź":
+            self.click_on_the_element(self.lodzkie_district_xpath)
+        elif district == "Lesser Poland":
+            self.click_on_the_element(self.malopolskie_district_xpath)
+        elif district == "Masovia":
+            self.click_on_the_element(self.mazowieckie_district_xpath)
+        elif district == "Opole":
+            self.click_on_the_element(self.opolskie_district_xpath)
+        elif district == "Subcarpatia":
+            self.click_on_the_element(self.podkarpackie_district_xpath)
+        elif district == "Podlaskie":
+            self.click_on_the_element(self.podlaskie_district_xpath)
+        elif district == "Pomerania":
+            self.click_on_the_element(self.pomorskie_district_xpath)
+        elif district == "Silesia":
+            self.click_on_the_element(self.slaskie_district_xpath)
+        elif district == "Holly Cross Province":
+            self.click_on_the_element(self.swietokrzyskie_district_xpath)
+        elif district == "Warmia Masuria":
+            self.click_on_the_element(self.warminskoMazurskie_district_xpath)
+        elif district == "Greater Poland":
+            self.click_on_the_element(self.wielkopolskie_district_xpath)
+        else:
+            self.click_on_the_element(self.zachodniopomorskie_district_xpath)
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.email_xpath)
         assert self.get_page_title(self.addPlayer_url) == self.expected_title

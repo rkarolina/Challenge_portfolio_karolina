@@ -1,15 +1,19 @@
+from lib2to3.pgen2 import driver
+
 from selenium.webdriver import Keys
 
 from pages.base_page import BasePage
 
 
 class EditPlayer(BasePage):
-    addPlayer_url = "https://scouts.futbolkolektyw.pl/en/players"
+    # addPlayer_url = "https://scouts.test.futbolkolektyw.pl/en/players"
+    # editPlayer_url = ".+(?=\/edit$).+"
     players_xpath = "//ul[1]/div[2]/div[2]/span"
     search_xpath = "//div/div[1]/div[2]/input"
     firstPlayer_xpath = "//*[@id='MUIDataTableBodyRow-0']"
+    redirect_to_edit_page = "// *[text() = 'Redirect to edit page']"
     editFacebookField_xpath = "//input[@name='webFB']"
-    # expected_title = ' '
+    expected_title = "Edit player"
     def type_in_search(self, search):
         self.wait_for_element_to_be_clickable(self.search_xpath)
         self.field_send_keys(self.search_xpath, search)
@@ -21,10 +25,11 @@ class EditPlayer(BasePage):
     def click_players_button(self):
         self.wait_for_element_to_be_clickable(self.players_xpath)
         self.click_on_the_element(self.players_xpath)
-
+    # TODO...
     def click_first_result(self):
         self.wait_for_element_to_be_clickable(self.firstPlayer_xpath)
         self.click_on_the_element(self.firstPlayer_xpath)
-    # def title_of_page(self):
-    #     self.wait_for_element_to_be_clickable(self.firstPlayer_xpath)
-    #     assert self.get_page_title(self.addPlayer_url) == self.expected_title
+
+    def title_of_page(self):
+        self.wait_for_element_to_be_clickable(self.redirect_to_edit_page)
+        assert self.driver.title.__contains__(self.expected_title)
