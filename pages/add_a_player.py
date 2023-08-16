@@ -55,22 +55,24 @@ class AddPlayer(BasePage):
     submit_xpath = "//*[@type='submit']"
     clear_xpath = "//*[text()='Clear']"
 
-    def type_in_playeremail(self, playeremail):
+    def type_in_player_email(self, email):
         self.wait_for_element_to_be_clickable(self.email_xpath)
-        self.field_send_keys(self.email_xpath, playeremail)
+        self.field_send_keys(self.email_xpath, email)
     def type_in_name(self, name):
         self.wait_for_element_to_be_clickable(self.name_xpath)
         self.field_send_keys(self.name_xpath, name)
+
     def type_in_surname(self, surname):
         self.wait_for_element_to_be_clickable(self.surname_xpath)
         self.field_send_keys(self.surname_xpath, surname)
+
     def type_in_age(self, age):
         self.wait_for_element_to_be_clickable(self.age_xpath)
         self.field_send_keys(self.age_xpath, age)
-    # TODO change name of the argument
-    def type_in_mainPosition(self, mainPosition):
+
+    def type_in_main_position(self, main_position):
         self.wait_for_element_to_be_clickable(self.mainPosition_xpath)
-        self.field_send_keys(self.mainPosition_xpath, mainPosition)
+        self.field_send_keys(self.mainPosition_xpath, main_position)
 
     # optional for Scouts Panel form
     def type_in_phone(self, phone):
@@ -150,38 +152,41 @@ class AddPlayer(BasePage):
     def select_district_dropdown(self, district):
         self.wait_for_element_to_be_clickable(self.district_xpath)
         self.click_on_the_element(self.district_xpath)
-        if district == "Lower Silesia":
+        # time.sleep(8)
+        if district == 'Lower Silesia' or 'Dolnoślaskie':
             self.click_on_the_element(self.dolnoslaskie_district_xpath)
-        elif district == "Kuyavia-Pomerania":
+        elif district == 'Kuyavia-Pomerania' or 'Kujawsko-Pomorskie':
             self.click_on_the_element(self.kujawskoPomorskie_district_xpath)
-        elif district == "Lublin":
+        elif district == 'Lublin' or 'Lubelskie':
             self.click_on_the_element(self.lubelski_district_xpath)
-        elif district == "Lubusz":
+        elif district == "Lubusz" or "Lubuskie":
             self.click_on_the_element(self.lubuski_district_xpath)
-        elif district == "Łódź":
+        elif district == "Łódź" or "Łódzkie":
             self.click_on_the_element(self.lodzkie_district_xpath)
-        elif district == "Lesser Poland":
+        elif district == "Lesser Poland" or "Małopolskie":
             self.click_on_the_element(self.malopolskie_district_xpath)
-        elif district == "Masovia":
+        elif district == "Masovia" or "Mazowieckie":
             self.click_on_the_element(self.mazowieckie_district_xpath)
-        elif district == "Opole":
+        elif district == "Opole" or "Opolskie":
             self.click_on_the_element(self.opolskie_district_xpath)
-        elif district == "Subcarpatia":
+        elif district == "Subcarpatia" or "Podkarpackie":
             self.click_on_the_element(self.podkarpackie_district_xpath)
         elif district == "Podlaskie":
             self.click_on_the_element(self.podlaskie_district_xpath)
-        elif district == "Pomerania":
+        elif district == "Pomerania" or "Pomorskie":
             self.click_on_the_element(self.pomorskie_district_xpath)
-        elif district == "Silesia":
+        elif district == "Silesia" or "Śląskie":
             self.click_on_the_element(self.slaskie_district_xpath)
-        elif district == "Holly Cross Province":
+        elif district == "Holly Cross Province" or "Świętokrzyskie":
             self.click_on_the_element(self.swietokrzyskie_district_xpath)
-        elif district == "Warmia Masuria":
+        elif district == "Warmia Masuria" or "Warmińsko-Mazurskie":
             self.click_on_the_element(self.warminskoMazurskie_district_xpath)
-        elif district == "Greater Poland":
+        elif district == "Greater Poland" or "Wielkopolskie":
             self.click_on_the_element(self.wielkopolskie_district_xpath)
+        # district == "West Pomerania" or "Zachodniopomorskie":
         else:
             self.click_on_the_element(self.zachodniopomorskie_district_xpath)
+
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.email_xpath)
         assert self.get_page_title(self.addPlayer_url) == self.expected_title

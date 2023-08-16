@@ -19,15 +19,18 @@ class AddMatch(BasePage):
     submit_button_xpath= "//*[contains(@class, 'containedPrimary')]"
     clear_button_xpath = "//*[contains(@class, 'containedSecondary')]"
 
-    def type_in_myteam(self,myteam):
+    def type_in_my_team(self, my_team):
         self.wait_for_element_to_be_clickable(self.my_team_field_xpath)
-        self.field_send_keys(self.my_team_field_xpath, myteam)
-    def type_in_enemyteam(self,enemyteam):
+        self.field_send_keys(self.my_team_field_xpath, my_team)
+
+    def type_in_enemy_team(self, enemy_team):
         self.wait_for_element_to_be_clickable(self.enemy_team_field_xpath)
-        self.field_send_keys(self.enemy_team_field_xpath, enemyteam)
+        self.field_send_keys(self.enemy_team_field_xpath, enemy_team)
+
     def type_in_my_team_score(self,my_team_score):
         self.wait_for_element_to_be_clickable(self.my_team_score_field_xpath)
         self.field_send_keys(self.my_team_score_field_xpath, my_team_score)
+
     def type_in_enemy_team_score(self,enemy_team_score):
         self.wait_for_element_to_be_clickable(self.enemy_team_score_field_xpath)
         self.field_send_keys(self.enemy_team_score_field_xpath, enemy_team_score)
@@ -36,15 +39,18 @@ class AddMatch(BasePage):
     def type_in_match_date(self, match_date):
         self.wait_for_element_to_be_clickable(self.date_field_xpath)
         self.field_send_keys(self.date_field_xpath, match_date)
+
     def type_in_tshirt(self,tshirt):
         self.wait_for_element_to_be_clickable(self.tshirt_color_field_xpath)
         self.field_send_keys(self.tshirt_color_field_xpath, tshirt)
+
     def type_in_league(self,league):
         self.wait_for_element_to_be_clickable(self.league_field_xpath)
         self.field_send_keys(self.league_field_xpath, league)
-    def type_in_timeplayed(self,timeplayed):
+
+    def type_in_time_played(self,time_played):
         self.wait_for_element_to_be_clickable(self.time_played_field_xpath)
-        self.field_send_keys(self.time_played_field_xpath, timeplayed)
+        self.field_send_keys(self.time_played_field_xpath, time_played)
 
     def type_in_number(self, number):
         self.wait_for_element_to_be_clickable(self.number_field_xpath)

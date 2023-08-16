@@ -1,6 +1,7 @@
 import os
 import time
 import unittest
+from lib2to3.pgen2 import driver
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -10,10 +11,11 @@ from pages.dashboard import Dashboard
 from pages.edit_players import EditPlayer
 from pages.login_page import LoginPage
 from pages.players import Players
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from utils.settings import IMPLICITLY_WAIT, DRIVER_PATH
+# TC006 - test case TC006 - filter player
 
-    # TC005 - test case TC005 - Add new match
-class TestAddNewMatch(unittest.TestCase):
+class TestFilterPlayer(unittest.TestCase):
+    driver_service = None
     driver = None
 
     @classmethod
@@ -26,7 +28,7 @@ class TestAddNewMatch(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_add_new_match(self):
+    def test_filter_player(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()  # check the title of page
         user_login.type_in_email('user01@getnada.com')  # type email
@@ -35,16 +37,24 @@ class TestAddNewMatch(unittest.TestCase):
 
         dashboard_page = Dashboard(self.driver)  # go to dashboard page
         dashboard_page.title_of_page()  # check the title of dashboard page
-        dashboard_page.click_players_button()  # click on the button Gracze/Players
+        dashboard_page.click_players_button()  # click players button
 
-        # TODO: 1. go to "Matches" button,
-        #  2. go to "Add Match" button,
-        #  3. add methods with adding information to the form
-
-        # players_page = Players(self.driver)  # go to add player page
-        # # players_page.title_of_page()
-        # players_page.type_in_search('test_maciej@gmail.com')
-        # time.sleep(3)
+        players_page = Players(self.driver)  # go to add player page
+        players_page.title_of_page()  # check the title of add player page
+        players_page.click_filter_button()
+        players_page.type_in_name('Maciej')  # type player's first name
+        players_page.type_in_surname('Bongos')  # type player's surname
+        players_page.type_in_age_min('0')
+        players_page.type_in_age_max('20')
+        players_page.type_in_main_position('bramkarz')
+        players_page.type_in_club('fc barcelona')
+        players_page.type_in_rate_min('0')
+        players_page.type_in_rate_max('50')
+        time.sleep(2)
+        players_page.click_close_filter()
+        time.sleep(2)
+        players_page.click_first_result()
+        time.sleep(2)
     @classmethod
     def tearDown(self):
         self.driver.quit()
