@@ -31,9 +31,10 @@ class TestDownloadCsvFile(unittest.TestCase):
         dashboard_page.title_of_page()  # check the title of dashboard page
         dashboard_page.click_players_button()  # click on the players button
         players_page = Players(self.driver)
+        players_page.title_of_page()
         players_page.click_download_csv_button() # click on download CSV Button
         time.sleep(5)
-        players_page.title_of_page()
+
     @classmethod
     def tearDown(self):
         self.driver.quit()

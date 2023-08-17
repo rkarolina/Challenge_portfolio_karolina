@@ -1,18 +1,14 @@
 import os
 import time
 import unittest
-from lib2to3.pgen2 import driver
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-
-from pages.add_a_player import AddPlayer
 from pages.dashboard import Dashboard
 from pages.edit_players import EditPlayer
 from pages.login_page import LoginPage
 from pages.players import Players
 from utils.settings import IMPLICITLY_WAIT, DRIVER_PATH
-# TC006 - test case TC006 - filter player
+# TC004 - test case TC004 - filter player
 
 class TestFilterPlayer(unittest.TestCase):
     driver_service = None
@@ -49,12 +45,17 @@ class TestFilterPlayer(unittest.TestCase):
         players_page.type_in_main_position('bramkarz')
         players_page.type_in_club('fc barcelona')
         players_page.type_in_rate_min('0')
-        players_page.type_in_rate_max('50')
+        players_page.type_in_rate_max('5')
         time.sleep(2)
         players_page.click_close_filter()
         time.sleep(2)
         players_page.click_first_result()
         time.sleep(2)
+        edit_players_page = EditPlayer(self.driver)
+        filtered_player_name = edit_players_page.get_filtered_player_name()
+        filtered_player_surname = edit_players_page.get_filtered_player_surname()
+        assert filtered_player_name.get_attribute('value') == 'Maciej'
+        assert filtered_player_surname.get_attribute('value') == 'Bongos'
     @classmethod
     def tearDown(self):
         self.driver.quit()

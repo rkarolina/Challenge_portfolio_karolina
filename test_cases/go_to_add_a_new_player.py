@@ -39,40 +39,38 @@ class TestAddPlayer(unittest.TestCase):
         dashboard_page.click_add_player_button()  # click on the button add player
         add_a_player_page = AddPlayer(self.driver)  # go to add player page
         add_a_player_page.title_of_page()  # check the title of add player page
-        add_a_player_page.type_in_player_email('test_maciej@gmail.com')  # type player's email
-        add_a_player_page.type_in_name('test')  # type player's first name
-        add_a_player_page.type_in_surname('maciej')  # type player's surname
+        add_a_player_page.type_in_player_email('myemail@email.com')  # type player's email
+        add_a_player_page.type_in_name('imie')  # type player's first name
+        add_a_player_page.type_in_surname('nazwisko')  # type player's surname
         add_a_player_page.type_in_phone('500111236')
-        add_a_player_page.type_in_weight('70')
+        add_a_player_page.type_in_weight('700')
         add_a_player_page.type_in_height('169')
-        add_a_player_page.type_in_age('01.01.1995')
-        add_a_player_page.select_leg_dropdown('Left Leg')
+        add_a_player_page.type_in_age('12.12.1999')
+        add_a_player_page.select_leg_dropdown('Left leg')
         add_a_player_page.type_in_club('AC Milan')
         add_a_player_page.type_in_level('łatwy')
-        add_a_player_page.type_in_mainPosition('bramkarz')
+        add_a_player_page.type_in_main_position('bramkarz')
         add_a_player_page.type_in_secondposition('obrońca')
-
         add_a_player_page.select_district_dropdown('Lublin')
         add_a_player_page.type_in_achievements('mistrz Polski')
         add_a_player_page.click_addLanguage_button()
         add_a_player_page.type_in_languagesToProvide('ENG')
-        # Part of TC005
-        add_a_player_page.type_in_laczyNasPilka('maciejmaciejtest')
-        add_a_player_page.type_in_ninetyMinutes('maciejmaciejtest2')
+        add_a_player_page.type_in_laczyNasPilka('Elisabeth123!')
+        add_a_player_page.type_in_ninetyMinutes('Elisabeth123!')
         add_a_player_page.type_in_facebookField('brak')
         add_a_player_page.click_addLinkToYoutube_button()
-        add_a_player_page.type_in_youtubeField('youtube/maciejmaciejtest')
+        add_a_player_page.type_in_youtubeField('youtube.com/Elisabeth123')
         add_a_player_page.click_submit_button()
+        # add_a_player_page.click_clear_button()
         edit_page = EditPlayer(self.driver)  # go to edit player page
         edit_page.title_of_page()
         # compare last added player on dashboard page with my last added player
         edit_page.click_on_main_page_button()  # go to dashboard page to check last added player
         dashboard_page = Dashboard(self.driver)  # go to dashboard page
         dashboard_page.title_of_page()
-        dashboard_page.click_last_created_player_button()
-        time.sleep(4)
-        # edit_page = EditPlayer(self.driver)  # go to edit player page
-        # edit_page.title_of_page2()
+
+        last_added_player = dashboard_page.get_last_created_player()
+        assert last_added_player.text == 'imie nazwisko'.upper()
     @classmethod
     def tearDown(self):
         self.driver.quit()

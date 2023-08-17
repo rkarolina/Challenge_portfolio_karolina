@@ -28,7 +28,7 @@ class AddPlayer(BasePage):
     # district options
     dolnoslaskie_district_xpath = "//*[starts-with(@data-value, 'dolnoslaskie')]"
     kujawskoPomorskie_district_xpath = "//*[starts-with(@data-value, 'kujawsko-pomorskie')]"
-    lubelski_district_xpath = "//*[starts-with(@data-value, 'lubelskie')]"
+    lubelski_district_xpath = "//li[text()='Lublin' and @data-value='lubelskie']"
     lubuski_district_xpath = "//*[starts-with(@data-value, 'lubuskie')]"
     lodzkie_district_xpath = "//*[starts-with(@data-value, 'lodzkie')]"
     malopolskie_district_xpath = "//li[text()='Lesser Poland' and @data-value='malopolskie']"
@@ -96,9 +96,7 @@ class AddPlayer(BasePage):
     def type_in_secondposition(self, secondposition):
         self.wait_for_element_to_be_clickable(self.secondPosition_xpath)
         self.field_send_keys(self.secondPosition_xpath, secondposition)
-    def type_in_disctrict(self, district):
-        self.wait_for_element_to_be_clickable(self.district_xpath)
-        self.field_send_keys(self.district_xpath, district)
+
     def type_in_achievements(self, achievements):
         self.wait_for_element_to_be_clickable(self.achievements_xpath)
         self.field_send_keys(self.achievements_xpath, achievements)
@@ -139,7 +137,6 @@ class AddPlayer(BasePage):
         self.wait_for_element_to_be_clickable(self.add_player_button_xpath)
         self.click_on_the_element(self.add_player_button_xpath)
     def select_leg_dropdown(self, leg):
-        # leg = Select(driver.find_element_by_id('mui-component-select-leg)')
         self.wait_for_element_to_be_clickable(self.leg_xpath)
         self.click_on_the_element(self.leg_xpath)
         if leg == "Left leg":
@@ -152,36 +149,37 @@ class AddPlayer(BasePage):
     def select_district_dropdown(self, district):
         self.wait_for_element_to_be_clickable(self.district_xpath)
         self.click_on_the_element(self.district_xpath)
-        # time.sleep(8)
-        if district == 'Lower Silesia' or 'Dolnoślaskie':
+        self.wait_for_element_to_be_clickable(self.podkarpackie_district_xpath)
+
+        if district == 'Lower Silesia' or district == 'Dolnoślaskie':
             self.click_on_the_element(self.dolnoslaskie_district_xpath)
-        elif district == 'Kuyavia-Pomerania' or 'Kujawsko-Pomorskie':
+        elif district == 'Kuyavia-Pomerania' or district == 'Kujawsko-Pomorskie':
             self.click_on_the_element(self.kujawskoPomorskie_district_xpath)
-        elif district == 'Lublin' or 'Lubelskie':
+        elif district == 'Lublin' or district == 'Lubelskie':
             self.click_on_the_element(self.lubelski_district_xpath)
-        elif district == "Lubusz" or "Lubuskie":
+        elif district == "Lubusz" or district == "Lubuskie":
             self.click_on_the_element(self.lubuski_district_xpath)
-        elif district == "Łódź" or "Łódzkie":
+        elif district == "Łódź" or district == "Łódzkie":
             self.click_on_the_element(self.lodzkie_district_xpath)
-        elif district == "Lesser Poland" or "Małopolskie":
+        elif district == "Lesser Poland" or district == "Małopolskie":
             self.click_on_the_element(self.malopolskie_district_xpath)
-        elif district == "Masovia" or "Mazowieckie":
+        elif district == "Masovia" or district == "Mazowieckie":
             self.click_on_the_element(self.mazowieckie_district_xpath)
-        elif district == "Opole" or "Opolskie":
+        elif district == "Opole" or district == "Opolskie":
             self.click_on_the_element(self.opolskie_district_xpath)
-        elif district == "Subcarpatia" or "Podkarpackie":
+        elif district == "Subcarpatia" or district == "Podkarpackie":
             self.click_on_the_element(self.podkarpackie_district_xpath)
         elif district == "Podlaskie":
             self.click_on_the_element(self.podlaskie_district_xpath)
-        elif district == "Pomerania" or "Pomorskie":
+        elif district == "Pomerania" or district == "Pomorskie":
             self.click_on_the_element(self.pomorskie_district_xpath)
-        elif district == "Silesia" or "Śląskie":
+        elif district == "Silesia" or district == "Śląskie":
             self.click_on_the_element(self.slaskie_district_xpath)
-        elif district == "Holly Cross Province" or "Świętokrzyskie":
+        elif district == "Holly Cross Province" or district == "Świętokrzyskie":
             self.click_on_the_element(self.swietokrzyskie_district_xpath)
-        elif district == "Warmia Masuria" or "Warmińsko-Mazurskie":
+        elif district == "Warmia Masuria" or district == "Warmińsko-Mazurskie":
             self.click_on_the_element(self.warminskoMazurskie_district_xpath)
-        elif district == "Greater Poland" or "Wielkopolskie":
+        elif district == "Greater Poland" or district == "Wielkopolskie":
             self.click_on_the_element(self.wielkopolskie_district_xpath)
         # district == "West Pomerania" or "Zachodniopomorskie":
         else:
