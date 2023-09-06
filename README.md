@@ -102,7 +102,7 @@ _Password input field_
    //input[@type="password"]
    input[id="password"]
 ```
-3. Attribute selector (class) and (id) br/>
+3. Attribute selector (class) and (id) <br/>
 ```
    //*[@class="MuiInputBase-input MuiInput-input"][@id="password"]
 ```
@@ -144,13 +144,13 @@ _Language change option (dropdown)_
 ```
    //*[@class= "MuiSelect-nativeInput"]
 ```
-2. Attribute selector (id) br/>
+2. Attribute selector (id) <br/>
 ```
    //*[@id="__next"]/form/div/div[2]/div/input
 ```
 3. Attribute selector (input)<br/>
 ```
-   input[class= "MuiSelect-nativeInput"]<br/>
+   input[class= "MuiSelect-nativeInput"]
    input[value= "pl"]
 ```
 _Sign in/Zaloguj button_
