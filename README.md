@@ -20,9 +20,9 @@ It's an application which enables gathering info about players by football scout
 
 Features:
 
-- [x] creating player's profiles
-- [x] adding matches and results
-- [x] reports <p>
+- creating player's profiles
+- adding matches and results
+- reports <p>
 
 Project performed as part of the Dare IT Challenge on the QA track: Introduction to Automated Testing. 💪
 <br/>First, based on my previous experience, I did exploratory testing to learn about the application, then I've created a test plan and test scenarios/cases.
@@ -56,10 +56,13 @@ Project performed as part of the Dare IT Challenge on the QA track: Introduction
 <a name='selectors'></a>
 <details>
 <summary>Login page</summary>
+  
+<br/>**Please note that these examples of selectors were only for training purposes, only some of them were used in the project**<br/>
+
+> Direct link to the [Login page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/login_page.py) with selectors and methods.
 
 Examples of selectors found on [Scouts Panel login page](https://scouts-test.futbolkolektyw.pl/) <br/>
 
-**Please note that these selectors were only for training purposes, only some of them were used in the project [direct link to the page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/login_page.py)<br/>**
 _Scouts Panel string_
 
 1. Attribute selector (id)<br/>
@@ -170,39 +173,45 @@ _Sign in/Zaloguj button_
 </details>
 <details>
 <summary>Players page</summary>
-
-Direct link to the [Players page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/players.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Players page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/players.py) with selectors and methods.
 
 </details>
 
 <details>
 <summary>Main page</summary>
-
-Direct link to the [Dasboard page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/dashboard.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Dasboard page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/dashboard.py) with selectors and methods.
 </details>
 
 <details>
 <summary>Matches page</summary>
-
-Direct link to the [Matches page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/matches.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Matches page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/matches.py) with selectors and methods.
 </details>
 
 <details>
 <summary>Add match page</summary>
-
-Direct link to the [Add match page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/add_match.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Add match page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/add_match.py) with selectors and methods.
 </details>
 
 <details>
 <summary>Add player page</summary>
-
-Direct link to the [Add player page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/add_a_player.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Add player page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/add_a_player.py) with selectors and methods.
 
 </details>
 <details>
 <summary>Edit players page</summary>
-
-Direct link to the [Edit players page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/edit_players.py) with selectors and methods.
+<br/>
+  
+> Direct link to the [Edit players page](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/pages/edit_players.py) with selectors and methods.
 </details>
 
 <a name='scenarios'></a>
@@ -222,7 +231,7 @@ Below you can find implemented **test cases in Python + Selenium** (links to the
 
 Test cases has been implemented also in Robot Framework. If you are interested you can check it out:
 - [Repository](https://github.com/rkarolina/robotframework_scoutpanel)
-- [Test cases](https://github.com/rkarolina/robotframework_scoutpanel/blob/main/test_login_rf.robotl)
+- [Test cases](https://github.com/rkarolina/robotframework_scoutpanel/blob/main/test_login_rf.robot)
 
 
 <a name='bugs'></a>
