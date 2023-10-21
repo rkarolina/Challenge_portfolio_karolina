@@ -32,8 +32,8 @@ class TestAddNewMatch(unittest.TestCase):
     def test_add_new_match(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()  # check the title of page
-        user_login.type_in_email('user01@getnada.com')  # type email
-        user_login.type_in_password('Test-1234')  # type password
+        user_login.type_in_email(' ')  # type email
+        user_login.type_in_password(' ')  # type password
         user_login.click_sign_in_button()  # click on the button to sign in.
 
         dashboard_page = Dashboard(self.driver)  # go to dashboard page
