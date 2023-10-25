@@ -216,7 +216,7 @@ _Sign in/Zaloguj button_
 
 <a name='scenarios'></a>
 ### Scenarios
-[Test cases](https://docs.google.com/spreadsheets/d/16-cDIWCZtrsKerXf4LcxMQzdhwJwX-PI/edit#gid=611878532) prepared for this project in Excel file with test data. <br/>
+[Test cases](https://1drv.ms/x/s!AiWhhxI_zHSDgtxvqCIUs10AwdYczw?e=RjVhSk) prepared for this project in Excel file with test data. <br/>
 Below you can find implemented **test cases in Python + Selenium** (links to the repository):
 1. TC001 - [Login to the Scouts Panel](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/test_cases/login_to_the_system.py)
 2. TC002 - [Download CSV file with players ](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/test_cases/download_players_csv_list.py)
