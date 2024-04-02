@@ -7,7 +7,6 @@
   - [Configuration](#configuration)
   - [Selectors](#selectors)
   - [Scenarios](#scenarios)
-  - [Robotframework](#robotframework)
   - [Bugs](#bugs)
   - [Report](#report)
 * [Portfolio](#portfolio)
@@ -224,15 +223,6 @@ Below you can find implemented **test cases in Python + Selenium** (links to the
 4. TC004 - [Filter player](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/test_cases/filter_player.py)
 5. TC005 - [Add a new match](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/test_cases/add_a_new_match.py)
 6. TC006 - [Edit existing Player](https://github.com/rkarolina/Challenge_portfolio_karolina/blob/main/test_cases/go_to_edit_new_player.py)
-
-
-<a name='robotframework'></a>
-### Robotframework
-
-Test cases has been implemented also in Robot Framework. If you are interested you can check it out:
-- [Repository](https://github.com/rkarolina/robotframework_scoutpanel)
-- [Test cases](https://github.com/rkarolina/robotframework_scoutpanel/blob/main/test_login_rf.robot)
-
 
 <a name='bugs'></a>
 ### Bugs
